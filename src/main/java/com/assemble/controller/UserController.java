@@ -16,6 +16,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+
     @GetMapping("/list")
     public List<UserDTO> list(){
         return  userService.list();
