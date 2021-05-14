@@ -21,7 +21,6 @@ public class UserController {
         return  userService.list();
     }
 
-
     @PostMapping("")
     public boolean save( @RequestBody UserDO userDO){
         return  userService.save(userDO);
